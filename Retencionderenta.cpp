@@ -12,10 +12,10 @@ int main()
 
 {
     //Llamado de la función
+    float salariofinal (float salario);
     cout << "Ingrese su salario \n";
     cin >> salario;
-    cout << "Su salario total es de: $" << salariofinal (salario);
-;
+    cout << "Su salario total es de: $" << salariofinal;
 
     return 0;
 }
@@ -25,34 +25,36 @@ float calculoretencion(float salario)
 {
     float salarioconretencion;
     salarioconretencion = salario - ((salario * 0.0625) + (salario * 0.03));
+    return salarioconretencion;
 }
 float calculodescuento(float salario)
 {
     float salarioconretencion;
-    float descuento;
+    float salariocondescuento;
     if (salarioconretencion >= 0.01 && salarioconretencion <= 472.00)
     {
-       descuento = salarioconretencion;
+       salariocondescuento = salarioconretencion;
     }
     else if (salarioconretencion >= 472.01 && salarioconretencion <= 895.24)
     {
-        descuento = ((salarioconretencion - 472.00)* 0.10) + 17.67;
+        salariocondescuento = ((salarioconretencion - 472.00)* 0.10) + 17.67;
     }
     else if (salarioconretencion >= 895.25 && salarioconretencion <= 2030.10)
     {
-        descuento = ((salarioconretencion - 895.24)* 0.20) + 60.00;
+        salariocondescuento = ((salarioconretencion - 895.24)* 0.20) + 60.00;
     }
     else if (salarioconretencion >=2038.11)
     {
-        descuento = ((salarioconretencion - 2038.10)* 0.30) + 288.57;
+        salariocondescuento = ((salarioconretencion - 2038.10)* 0.30) + 288.57;
     }
     
-    return descuento;
+    return salariocondescuento;
 }
 float salariofinal(float salario)
 {
     float salariofinal;
     float salariodescuento;
     salariofinal = salario - salariodescuento;
+
     return salariofinal;
 }
