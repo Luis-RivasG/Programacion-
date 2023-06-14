@@ -2,10 +2,10 @@
 
 using namespace std;
 
-float Tipotriangulo(float, float, float);
+int Tipotriangulo(int, int, int);
 int main()
 {
-    float lado1, lado2, lado3;
+    int lado1, lado2, lado3;
     float resultado;
     cout << "Ingrese primer lado del triangulo \n";
     cin >> lado1;
@@ -18,9 +18,9 @@ int main()
 
     return 0;
 }
-float Tipotringulo(float lado1, float lado2, float lado3)
+int Tipotringulo(int lado1, int lado2, int lado3)
 {
-    float Tipotriangulo;
+    int Tipotriangulo = Tipotriangulo;
     if (lado1 == lado2 && lado2 == lado3)
     {
         cout << "El triangulo es equilatero" << endl;
